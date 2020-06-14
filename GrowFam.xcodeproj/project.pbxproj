@@ -14,6 +14,7 @@
 		F085C4152491E0680086380E /* GrowFam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F085C4132491E0680086380E /* GrowFam.xcdatamodeld */; };
 		F085C4172491E0690086380E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F085C4162491E0690086380E /* Assets.xcassets */; };
 		F085C41A2491E0690086380E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F085C4182491E0690086380E /* LaunchScreen.storyboard */; };
+		F0D869F4249638EA007CDB7F /* AchievementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D869F3249638EA007CDB7F /* AchievementVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F085C4162491E0690086380E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F085C4192491E0690086380E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F085C41B2491E0690086380E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0D869F3249638EA007CDB7F /* AchievementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				F085C4182491E0690086380E /* LaunchScreen.storyboard */,
 				F085C41B2491E0690086380E /* Info.plist */,
 				F085C4132491E0680086380E /* GrowFam.xcdatamodeld */,
+				F0D869F3249638EA007CDB7F /* AchievementVC.swift */,
 			);
 			path = GrowFam;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				F085C40F2491E0680086380E /* ViewController.swift in Sources */,
 				F085C40B2491E0680086380E /* AppDelegate.swift in Sources */,
+				F0D869F4249638EA007CDB7F /* AchievementVC.swift in Sources */,
 				F085C40D2491E0680086380E /* SceneDelegate.swift in Sources */,
 				F085C4152491E0680086380E /* GrowFam.xcdatamodeld in Sources */,
 			);
