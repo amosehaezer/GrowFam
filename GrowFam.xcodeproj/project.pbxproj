@@ -10,6 +10,7 @@
 		49E4603B24936CA7001E90A3 /* MemberPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4603A24936CA7001E90A3 /* MemberPageViewController.swift */; };
 		49E46044249373D1001E90A3 /* MemberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E46042249373D1001E90A3 /* MemberCollectionViewCell.swift */; };
 		49E46045249373D1001E90A3 /* MemberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E46043249373D1001E90A3 /* MemberCollectionViewCell.xib */; };
+		49F731E524978424003B0C4B /* FamilyRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F731E424978424003B0C4B /* FamilyRegisterViewController.swift */; };
 		49FE2FEB2493C79400A6FF4F /* MemberProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE2FEA2493C79400A6FF4F /* MemberProfileVC.swift */; };
 		49FE2FED2493D73100A6FF4F /* ButtonSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE2FEC2493D73100A6FF4F /* ButtonSet.swift */; };
 		49FE2FEF2494D50100A6FF4F /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE2FEE2494D50100A6FF4F /* AddMemberViewController.swift */; };
@@ -30,6 +31,7 @@
 		49E4603A24936CA7001E90A3 /* MemberPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberPageViewController.swift; sourceTree = "<group>"; };
 		49E46042249373D1001E90A3 /* MemberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCollectionViewCell.swift; sourceTree = "<group>"; };
 		49E46043249373D1001E90A3 /* MemberCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberCollectionViewCell.xib; sourceTree = "<group>"; };
+		49F731E424978424003B0C4B /* FamilyRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyRegisterViewController.swift; sourceTree = "<group>"; };
 		49FE2FEA2493C79400A6FF4F /* MemberProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberProfileVC.swift; sourceTree = "<group>"; };
 		49FE2FEC2493D73100A6FF4F /* ButtonSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSet.swift; sourceTree = "<group>"; };
 		49FE2FEE2494D50100A6FF4F /* AddMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				F085C40C2491E0680086380E /* SceneDelegate.swift */,
 				F085C40E2491E0680086380E /* ViewController.swift */,
 				F085C4102491E0680086380E /* Main.storyboard */,
+				49F731E424978424003B0C4B /* FamilyRegisterViewController.swift */,
 				49FE2FEC2493D73100A6FF4F /* ButtonSet.swift */,
 				49FE2FEE2494D50100A6FF4F /* AddMemberViewController.swift */,
 				49FE2FEA2493C79400A6FF4F /* MemberProfileVC.swift */,
@@ -181,6 +184,7 @@
 				F0D869F4249638EA007CDB7F /* AchievementVC.swift in Sources */,
 				F085C40D2491E0680086380E /* SceneDelegate.swift in Sources */,
 				F015DB2424975FD000C42DC5 /* PopUpViewController.swift in Sources */,
+				49F731E524978424003B0C4B /* FamilyRegisterViewController.swift in Sources */,
 				F015DB2224975FBB00C42DC5 /* HomeViewController.swift in Sources */,
 				49E4603B24936CA7001E90A3 /* MemberPageViewController.swift in Sources */,
 				F085C4152491E0680086380E /* GrowFam.xcdatamodeld in Sources */,
