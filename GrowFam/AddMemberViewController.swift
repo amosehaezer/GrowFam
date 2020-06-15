@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddMemberViewController: UIViewController {
+class AddMemberViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var ProfileImageView: UIImageView!
     @IBOutlet weak var NameTextArea: UITextField!
@@ -35,6 +35,26 @@ class AddMemberViewController: UIViewController {
                }
            }
        }
-
+    @IBAction func importImage(_ sender: Any) {
+        let image = UIImagePickerController()
+        image.delegate = self
+        
+        image.sourceType = UIImagePickerController.SourceType.photoLibrary
+        
+        image.allowsEditing = false
+        
+        self.present(image, animated: true){
+            //After it is complete
+        }
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[.originalImage] as? UIImage{
+            ProfileImageView.image = image
+        }
+        else{
+            //ErrorMessage
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
 
 }
