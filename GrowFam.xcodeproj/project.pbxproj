@@ -15,6 +15,7 @@
 		49FE2FEF2494D50100A6FF4F /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE2FEE2494D50100A6FF4F /* AddMemberViewController.swift */; };
 		F015DB2224975FBB00C42DC5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015DB2124975FBB00C42DC5 /* HomeViewController.swift */; };
 		F015DB2424975FD000C42DC5 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015DB2324975FD000C42DC5 /* PopUpViewController.swift */; };
+		F02D9BC624977D4B0030B04B /* CustomTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D9BC524977D4B0030B04B /* CustomTabBarVC.swift */; };
 		F085C40B2491E0680086380E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085C40A2491E0680086380E /* AppDelegate.swift */; };
 		F085C40D2491E0680086380E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085C40C2491E0680086380E /* SceneDelegate.swift */; };
 		F085C40F2491E0680086380E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085C40E2491E0680086380E /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 		49FE2FEE2494D50100A6FF4F /* AddMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberViewController.swift; sourceTree = "<group>"; };
 		F015DB2124975FBB00C42DC5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F015DB2324975FD000C42DC5 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		F02D9BC524977D4B0030B04B /* CustomTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarVC.swift; sourceTree = "<group>"; };
 		F085C4072491E0680086380E /* GrowFam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowFam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F085C40A2491E0680086380E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F085C40C2491E0680086380E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				F0D869F3249638EA007CDB7F /* AchievementVC.swift */,
 				F015DB2124975FBB00C42DC5 /* HomeViewController.swift */,
 				F015DB2324975FD000C42DC5 /* PopUpViewController.swift */,
+				F02D9BC524977D4B0030B04B /* CustomTabBarVC.swift */,
 			);
 			path = GrowFam;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				49E46044249373D1001E90A3 /* MemberCollectionViewCell.swift in Sources */,
 				F085C40F2491E0680086380E /* ViewController.swift in Sources */,
+				F02D9BC624977D4B0030B04B /* CustomTabBarVC.swift in Sources */,
 				49FE2FED2493D73100A6FF4F /* ButtonSet.swift in Sources */,
 				49FE2FEF2494D50100A6FF4F /* AddMemberViewController.swift in Sources */,
 				F085C40B2491E0680086380E /* AppDelegate.swift in Sources */,
