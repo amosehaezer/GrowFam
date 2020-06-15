@@ -7,12 +7,21 @@
 //
 
 import UIKit
-
+//struct untuk data dummy quest
+struct Quest{
+    let desc:String
+}
 class QuestVC: UIViewController {
     
     let QuestTV = UITableView()
     var totalCount: Int = 0
     var currentCount: Int = 0
+    //dummy data quest
+    let contacts = [
+        Quest(desc: "Tolong jagain toko"),
+        Quest(desc: "Masak makanan bersama keluarga"),
+        Quest(desc: "Tidur bareng"),
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
