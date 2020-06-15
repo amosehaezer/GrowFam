@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PersonalQuestTableViewCell: UITableViewCell {
+class QuestTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

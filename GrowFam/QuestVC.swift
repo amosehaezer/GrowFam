@@ -10,7 +10,7 @@ import UIKit
 
 class QuestVC: UIViewController {
     
-    let personalQuestTV = UITableView()
+    let QuestTV = UITableView()
     var totalCount: Int = 0
     var currentCount: Int = 0
     
@@ -40,22 +40,22 @@ class QuestVC: UIViewController {
         control.addTarget(self, action: #selector(segmentedControl(_:)), for: .valueChanged)
         control.selectedSegmentIndex = 0
         
-        personalQuestTV.frame = CGRect(x: 30, y: 225, width: (self.view.frame.width - 60), height: 750)
+        QuestTV.frame = CGRect(x: 30, y: 225, width: (self.view.frame.width - 60), height: 750)
+        registerTableViewCells()
         
         view.addSubview(frame)
         view.addSubview(titleLabel)
         view.addSubview(control)
-        view.addSubview(personalQuestTV)
+        view.addSubview(QuestTV)
     }
     
     @objc func segmentedControl(_ segmentedControl: UISegmentedControl) {
         switch segmentedControl.selectedSegmentIndex {
         case 0:
             print("Ini Family")
-//            setupPersonal()
+            registerTableViewCells()
         case 1:
             print("Ini Personal")
-//            setupFamily()
         default:
             break
         }
@@ -63,22 +63,22 @@ class QuestVC: UIViewController {
     
     func registerTableViewCells() {
         let tableviewCell = UINib(nibName: "PersonalQuestTableViewCell", bundle: nil)
-        self.personalQuestTV.register(tableviewCell, forCellReuseIdentifier: "personalCell")
+        self.QuestTV.register(tableviewCell, forCellReuseIdentifier: "QuestCell")
     }
 }
 
-//extension QuestVC: UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 1
-//    }
+extension QuestVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return totalCount
+    }
 
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        if let cell =
-        
-//    }
-
-
-//}
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = QuestTV.dequeueReusableCell(withIdentifier: "QuestCell") as? QuestTableViewCell {
+            return cell
+        }
+        return UITableViewCell()
+    }
+}
 
 extension QuestVC: UITableViewDelegate {
     
