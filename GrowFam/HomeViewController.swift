@@ -27,28 +27,13 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        let home = UITabBarItem()
-//        home.title = "Home"
-//        home.image = UIImage(named: "Dad")
-//        
-//        let achievement = UITabBarItem()
-//        achievement.title = "Achievement"
-//        
-//        let member = UITabBarItem()
-//        member.title = "Member"
-//        
-//        let homeVC = HomeViewController()
-//        homeVC.tabBarItem = home
-//        
-//        let achievementVC = AchievementVC()
-//        achievementVC.tabBarItem = achievement
-//        
-//        let memberVC = MemberProfileVC()
-//        memberVC.tabBarItem = member
-//        
-//        let tabBar = UITabBarController()
-//        tabBar.viewControllers = [member, home, achievement]
+        setup()
     }
+    
+    func setup() {
+        
+    }
+    
     //function buat jalanin musik
     
     @IBAction func SpeakerClicked(_ sender: Any) {
