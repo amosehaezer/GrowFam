@@ -34,27 +34,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        let home = UITabBarItem()
-//        home.title = "Home"
-//        home.image = UIImage(named: "Dad")
-//        
-//        let achievement = UITabBarItem()
-//        achievement.title = "Achievement"
-//        
-//        let member = UITabBarItem()
-//        member.title = "Member"
-//        
-//        let homeVC = HomeViewController()
-//        homeVC.tabBarItem = home
-//        
-//        let achievementVC = AchievementVC()
-//        achievementVC.tabBarItem = achievement
-//        
-//        let memberVC = MemberProfileVC()
-//        memberVC.tabBarItem = member
-//        
-//        let tabBar = UITabBarController()
-//        tabBar.viewControllers = [member, home, achievement]
 
         
         self.view.addSubview(raindrop)
@@ -77,7 +56,7 @@ class HomeViewController: UIViewController {
             guard let url = Bundle.main.url(forResource: file, withExtension: "mp3") else {return}
             player = try AVAudioPlayer(contentsOf: url)
             player?.play()
-            player?.numberOfLoops = 1000
+            player?.numberOfLoops = 10000
         } catch {
             print(error.localizedDescription)
         }
@@ -86,11 +65,11 @@ class HomeViewController: UIViewController {
     @IBAction func SpeakerClicked(_ sender: Any) {
         if audioPlay == true{
             audioPlay = false
-            //audioButton.currentImage = muteimage
+//            audioButton.currentImage = muteimage
         }
         if audioPlay == false {
             audioPlay = true
-            //audioButton.currentImage = speakerimage
+//            audioButton.currentImage = speakerimage
         }
     }
     
