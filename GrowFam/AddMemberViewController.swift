@@ -28,10 +28,6 @@ class AddMemberViewController: UIViewController, UINavigationControllerDelegate,
            
            if segue.identifier == "unwindToMember" {
                if let destination = segue.destination as? MemberPageViewController {
-                destination.imageNameTemp = "Daughter"
-                destination.nameTemp = NameTextArea.text!
-                destination.roleTemp = RoleTextArea.text!
-                destination.taskTemp = "0/3"
                }
            }
        }

@@ -9,18 +9,19 @@
 import UIKit
 
 struct member {
-    var imageName: String
+    var imageName: UIImage
     var role: String
     var name: String
     var task: String
 }
 
-
+var id: [String] = []
 
 var Member: [member] = [
-    member(imageName: "Dad", role:  "Dad",name: "Filipo Gaspar",task: "3/3"),
-    member(imageName: "Mom", role:  "Mom",name: "Nairobi",task: "1/3"),
-    member(imageName: "Son", role:  "Son",name: "Oslo",task: "2/3"),
+    member(imageName: #imageLiteral(resourceName: "Dad"), role:  "Dad",name: "Filipo Gaspar",task: "3/3"),
+    member(imageName: #imageLiteral(resourceName: "Mom"), role:  "Mom",name: "Nairobi",task: "1/3"),
+    member(imageName: #imageLiteral(resourceName: "Son"), role:  "Son",name: "Oslo",task: "2/3"),
+    member(imageName: #imageLiteral(resourceName: "􀑍"), role: "Add", name: "", task: "")
 ]
 class MemberPageViewController: UIViewController{
     @IBOutlet weak var MemberCollectionView: UICollectionView!
@@ -30,6 +31,10 @@ class MemberPageViewController: UIViewController{
     var nameTemp: String = ""
     var taskTemp: String = ""
     override func viewDidLoad() {
+        for member in 0..<Member.count-1 {
+            id.append("profileMember")
+        }
+        id.append("addMember")
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
@@ -54,10 +59,15 @@ class MemberPageViewController: UIViewController{
     
     @IBAction func unwindToMember(_ unwindSegue: UIStoryboardSegue) {
       if unwindSegue.source is AddMemberViewController{
-                let source = unwindSegue.source
-        Member.append(member(imageName: imageNameTemp, role: roleTemp, name: nameTemp, task: taskTemp))
+                let source = unwindSegue.source as! AddMemberViewController
+        id.popLast()
+        id.append("profileMember")
+        id.append("addMember")
+        Member.popLast()
+        Member.append(member(imageName: source.ProfileImageView.image!, role: source.RoleTextArea.text!, name: source.NameTextArea.text!, task: "0/3"))
+        Member.append(member(imageName: #imageLiteral(resourceName: "􀑍"), role: "Add", name: "", task: ""))
         MemberCollectionView.reloadData()
-        print("Saved")
+        print(Member.count)
             }
         }
     }
@@ -69,10 +79,11 @@ extension MemberPageViewController: UICollectionViewDelegate{
         
 
         print("Tapped")
-        performSegue(withIdentifier: "MemberToRegister", sender: nil)
+//        performSegue(withIdentifier: "MemberToRegister", sender: nil)
 //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "addMember") as UIViewController
-//        present(vc, animated: true, completion: nil)
+        let identifier = id[indexPath.row]
+        let vc = storyboard!.instantiateViewController(withIdentifier: identifier) as UIViewController
+        present(vc, animated: true, completion: nil)
     }
 
 }
@@ -84,7 +95,7 @@ extension MemberPageViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemberCollectionViewCell", for: indexPath) as! MemberCollectionViewCell
         let item = Member[indexPath.item]
-        cell.imageView.image = UIImage(named: item.imageName)
+        cell.imageView.image = item.imageName
         cell.label1.text = item.role
         cell.label2.text = item.name
         return cell
