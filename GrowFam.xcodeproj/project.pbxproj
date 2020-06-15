@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1DB478802493903D00BC4854 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB4787F2493903D00BC4854 /* HomeViewController.swift */; };
 		1DB478822493904600BC4854 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB478812493904600BC4854 /* PopUpViewController.swift */; };
-		1DB478842493919A00BC4854 /* psotmalone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1DB478832493919A00BC4854 /* psotmalone.mp3 */; };
 		F085C40B2491E0680086380E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085C40A2491E0680086380E /* AppDelegate.swift */; };
 		F085C40D2491E0680086380E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085C40C2491E0680086380E /* SceneDelegate.swift */; };
 		F085C40F2491E0680086380E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085C40E2491E0680086380E /* ViewController.swift */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		1DB4787F2493903D00BC4854 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1DB478812493904600BC4854 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		1DB478832493919A00BC4854 /* psotmalone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = psotmalone.mp3; path = ../../Desktop/psotmalone.mp3; sourceTree = "<group>"; };
 		F085C4072491E0680086380E /* GrowFam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowFam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F085C40A2491E0680086380E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F085C40C2491E0680086380E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +48,6 @@
 			children = (
 				F085C4092491E0680086380E /* GrowFam */,
 				F085C4082491E0680086380E /* Products */,
-				1DB478832493919A00BC4854 /* psotmalone.mp3 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,7 +136,6 @@
 			files = (
 				F085C41A2491E0690086380E /* LaunchScreen.storyboard in Resources */,
 				F085C4172491E0690086380E /* Assets.xcassets in Resources */,
-				1DB478842493919A00BC4854 /* psotmalone.mp3 in Resources */,
 				F085C4122491E0680086380E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
