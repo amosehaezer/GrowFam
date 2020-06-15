@@ -10,9 +10,14 @@
 		49E4603B24936CA7001E90A3 /* MemberPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4603A24936CA7001E90A3 /* MemberPageViewController.swift */; };
 		49E46044249373D1001E90A3 /* MemberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E46042249373D1001E90A3 /* MemberCollectionViewCell.swift */; };
 		49E46045249373D1001E90A3 /* MemberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E46043249373D1001E90A3 /* MemberCollectionViewCell.xib */; };
+		49F731E524978424003B0C4B /* FamilyRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F731E424978424003B0C4B /* FamilyRegisterViewController.swift */; };
 		49FE2FEB2493C79400A6FF4F /* MemberProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE2FEA2493C79400A6FF4F /* MemberProfileVC.swift */; };
 		49FE2FED2493D73100A6FF4F /* ButtonSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE2FEC2493D73100A6FF4F /* ButtonSet.swift */; };
 		49FE2FEF2494D50100A6FF4F /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE2FEE2494D50100A6FF4F /* AddMemberViewController.swift */; };
+		F015DB2224975FBB00C42DC5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015DB2124975FBB00C42DC5 /* HomeViewController.swift */; };
+		F015DB2424975FD000C42DC5 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015DB2324975FD000C42DC5 /* PopUpViewController.swift */; };
+		F02D9BC624977D4B0030B04B /* CustomTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D9BC524977D4B0030B04B /* CustomTabBarVC.swift */; };
+		F05007352497B9D400660273 /* NC3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F05007342497B9D400660273 /* NC3.mp3 */; };
 		F051DAA62497142E00CE46A1 /* QuestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F051DAA52497142E00CE46A1 /* QuestVC.swift */; };
 		F051DAA9249747AC00CE46A1 /* QuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F051DAA7249747AC00CE46A1 /* QuestTableViewCell.swift */; };
 		F051DAAA249747AC00CE46A1 /* QuestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F051DAA8249747AC00CE46A1 /* QuestTableViewCell.xib */; };
@@ -31,9 +36,14 @@
 		49E4603A24936CA7001E90A3 /* MemberPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberPageViewController.swift; sourceTree = "<group>"; };
 		49E46042249373D1001E90A3 /* MemberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCollectionViewCell.swift; sourceTree = "<group>"; };
 		49E46043249373D1001E90A3 /* MemberCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberCollectionViewCell.xib; sourceTree = "<group>"; };
+		49F731E424978424003B0C4B /* FamilyRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyRegisterViewController.swift; sourceTree = "<group>"; };
 		49FE2FEA2493C79400A6FF4F /* MemberProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberProfileVC.swift; sourceTree = "<group>"; };
 		49FE2FEC2493D73100A6FF4F /* ButtonSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSet.swift; sourceTree = "<group>"; };
 		49FE2FEE2494D50100A6FF4F /* AddMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberViewController.swift; sourceTree = "<group>"; };
+		F015DB2124975FBB00C42DC5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F015DB2324975FD000C42DC5 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		F02D9BC524977D4B0030B04B /* CustomTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarVC.swift; sourceTree = "<group>"; };
+		F05007342497B9D400660273 /* NC3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = NC3.mp3; sourceTree = "<group>"; };
 		F051DAA52497142E00CE46A1 /* QuestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestVC.swift; sourceTree = "<group>"; };
 		F051DAA7249747AC00CE46A1 /* QuestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestTableViewCell.swift; sourceTree = "<group>"; };
 		F051DAA8249747AC00CE46A1 /* QuestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestTableViewCell.xib; sourceTree = "<group>"; };
@@ -61,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F05007332497B7E100660273 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F05007342497B9D400660273 /* NC3.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		F085C3FE2491E0680086380E = {
 			isa = PBXGroup;
 			children = (
@@ -80,10 +98,12 @@
 		F085C4092491E0680086380E /* GrowFam */ = {
 			isa = PBXGroup;
 			children = (
+				F05007332497B7E100660273 /* Sounds */,
 				F085C40A2491E0680086380E /* AppDelegate.swift */,
 				F085C40C2491E0680086380E /* SceneDelegate.swift */,
 				F085C40E2491E0680086380E /* ViewController.swift */,
 				F085C4102491E0680086380E /* Main.storyboard */,
+				49F731E424978424003B0C4B /* FamilyRegisterViewController.swift */,
 				49FE2FEC2493D73100A6FF4F /* ButtonSet.swift */,
 				49FE2FEE2494D50100A6FF4F /* AddMemberViewController.swift */,
 				49FE2FEA2493C79400A6FF4F /* MemberProfileVC.swift */,
@@ -99,6 +119,9 @@
 				F051DAA7249747AC00CE46A1 /* QuestTableViewCell.swift */,
 				F051DAA8249747AC00CE46A1 /* QuestTableViewCell.xib */,
 				F051DAAB2497573900CE46A1 /* DummyData.swift */,
+				F015DB2124975FBB00C42DC5 /* HomeViewController.swift */,
+				F015DB2324975FD000C42DC5 /* PopUpViewController.swift */,
+				F02D9BC524977D4B0030B04B /* CustomTabBarVC.swift */,
 			);
 			path = GrowFam;
 			sourceTree = "<group>";
@@ -164,6 +187,7 @@
 				F051DAAA249747AC00CE46A1 /* QuestTableViewCell.xib in Resources */,
 				49E46045249373D1001E90A3 /* MemberCollectionViewCell.xib in Resources */,
 				F085C41A2491E0690086380E /* LaunchScreen.storyboard in Resources */,
+				F05007352497B9D400660273 /* NC3.mp3 in Resources */,
 				F085C4172491E0690086380E /* Assets.xcassets in Resources */,
 				F085C4122491E0680086380E /* Main.storyboard in Resources */,
 			);
@@ -179,12 +203,16 @@
 				49E46044249373D1001E90A3 /* MemberCollectionViewCell.swift in Sources */,
 				F051DAA9249747AC00CE46A1 /* QuestTableViewCell.swift in Sources */,
 				F085C40F2491E0680086380E /* ViewController.swift in Sources */,
+				F02D9BC624977D4B0030B04B /* CustomTabBarVC.swift in Sources */,
 				49FE2FED2493D73100A6FF4F /* ButtonSet.swift in Sources */,
 				49FE2FEF2494D50100A6FF4F /* AddMemberViewController.swift in Sources */,
 				F085C40B2491E0680086380E /* AppDelegate.swift in Sources */,
 				F051DAA62497142E00CE46A1 /* QuestVC.swift in Sources */,
 				F0D869F4249638EA007CDB7F /* AchievementVC.swift in Sources */,
 				F085C40D2491E0680086380E /* SceneDelegate.swift in Sources */,
+				F015DB2424975FD000C42DC5 /* PopUpViewController.swift in Sources */,
+				49F731E524978424003B0C4B /* FamilyRegisterViewController.swift in Sources */,
+				F015DB2224975FBB00C42DC5 /* HomeViewController.swift in Sources */,
 				49E4603B24936CA7001E90A3 /* MemberPageViewController.swift in Sources */,
 				F085C4152491E0680086380E /* GrowFam.xcdatamodeld in Sources */,
 				F051DAAC2497573900CE46A1 /* DummyData.swift in Sources */,

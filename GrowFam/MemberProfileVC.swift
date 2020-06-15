@@ -48,7 +48,7 @@ extension MemberProfileVC: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemberCollectionViewCell", for: indexPath) as! MemberCollectionViewCell
         let item = Member[indexPath.item]
-        cell.imageView.image = UIImage(named: item.imageName)
+        cell.imageView.image = item.imageName
         cell.label1.text = item.role
         cell.label2.text = item.name
         cell.label3.text = item.task
