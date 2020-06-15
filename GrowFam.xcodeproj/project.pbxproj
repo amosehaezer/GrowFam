@@ -13,6 +13,8 @@
 		49FE2FEB2493C79400A6FF4F /* MemberProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE2FEA2493C79400A6FF4F /* MemberProfileVC.swift */; };
 		49FE2FED2493D73100A6FF4F /* ButtonSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE2FEC2493D73100A6FF4F /* ButtonSet.swift */; };
 		49FE2FEF2494D50100A6FF4F /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE2FEE2494D50100A6FF4F /* AddMemberViewController.swift */; };
+		F015DB2224975FBB00C42DC5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015DB2124975FBB00C42DC5 /* HomeViewController.swift */; };
+		F015DB2424975FD000C42DC5 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015DB2324975FD000C42DC5 /* PopUpViewController.swift */; };
 		F085C40B2491E0680086380E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085C40A2491E0680086380E /* AppDelegate.swift */; };
 		F085C40D2491E0680086380E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085C40C2491E0680086380E /* SceneDelegate.swift */; };
 		F085C40F2491E0680086380E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085C40E2491E0680086380E /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 		49FE2FEA2493C79400A6FF4F /* MemberProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberProfileVC.swift; sourceTree = "<group>"; };
 		49FE2FEC2493D73100A6FF4F /* ButtonSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSet.swift; sourceTree = "<group>"; };
 		49FE2FEE2494D50100A6FF4F /* AddMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberViewController.swift; sourceTree = "<group>"; };
+		F015DB2124975FBB00C42DC5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F015DB2324975FD000C42DC5 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		F085C4072491E0680086380E /* GrowFam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowFam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F085C40A2491E0680086380E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F085C40C2491E0680086380E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				F085C41B2491E0690086380E /* Info.plist */,
 				F085C4132491E0680086380E /* GrowFam.xcdatamodeld */,
 				F0D869F3249638EA007CDB7F /* AchievementVC.swift */,
+				F015DB2124975FBB00C42DC5 /* HomeViewController.swift */,
+				F015DB2324975FD000C42DC5 /* PopUpViewController.swift */,
 			);
 			path = GrowFam;
 			sourceTree = "<group>";
@@ -170,6 +176,8 @@
 				F085C40B2491E0680086380E /* AppDelegate.swift in Sources */,
 				F0D869F4249638EA007CDB7F /* AchievementVC.swift in Sources */,
 				F085C40D2491E0680086380E /* SceneDelegate.swift in Sources */,
+				F015DB2424975FD000C42DC5 /* PopUpViewController.swift in Sources */,
+				F015DB2224975FBB00C42DC5 /* HomeViewController.swift in Sources */,
 				49E4603B24936CA7001E90A3 /* MemberPageViewController.swift in Sources */,
 				F085C4152491E0680086380E /* GrowFam.xcdatamodeld in Sources */,
 				49FE2FEB2493C79400A6FF4F /* MemberProfileVC.swift in Sources */,
