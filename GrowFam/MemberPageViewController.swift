@@ -14,8 +14,9 @@ struct member {
     var name: String
     var task: String
 }
-
+var MemberCounter: Int = 0
 var id: [String] = []
+var temp: Int = 0
 
 var Member: [member] = [
     member(imageName: #imageLiteral(resourceName: "Dad"), role:  "Dad",name: "Filipo Gaspar",task: "3/3"),
@@ -43,8 +44,9 @@ class MemberPageViewController: UIViewController{
         
         
         super.viewDidLoad()
+       
         guard let collectionView = MemberCollectionView, let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
-
+        
         flowLayout.minimumInteritemSpacing = margin
         flowLayout.minimumLineSpacing = margin
         flowLayout.sectionInset = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
@@ -58,39 +60,48 @@ class MemberPageViewController: UIViewController{
     
     
     @IBAction func unwindToMember(_ unwindSegue: UIStoryboardSegue) {
-      if unwindSegue.source is AddMemberViewController{
-                let source = unwindSegue.source as! AddMemberViewController
-        id.popLast()
-        id.append("profileMember")
-        id.append("addMember")
-        Member.popLast()
-        Member.append(member(imageName: source.ProfileImageView.image!, role: source.RoleTextArea.text!, name: source.NameTextArea.text!, task: "0/3"))
-        Member.append(member(imageName: #imageLiteral(resourceName: "􀑍"), role: "Add", name: "", task: ""))
-        MemberCollectionView.reloadData()
-        print(Member.count)
-            }
+        if unwindSegue.source is AddMemberViewController{
+            let source = unwindSegue.source as! AddMemberViewController
+            id.popLast()
+            id.append("profileMember")
+            id.append("addMember")
+            Member.popLast()
+            Member.append(member(imageName: source.ProfileImageView.image!, role: source.RoleTextArea.text!, name: source.NameTextArea.text!, task: "0/3"))
+            Member.append(member(imageName: #imageLiteral(resourceName: "􀑍"), role: "Add", name: "", task: ""))
+            MemberCollectionView.reloadData()
+            print(Member.count)
         }
     }
-    
+}
+
 
 extension MemberPageViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         
-
+        
         print("Tapped")
-//        performSegue(withIdentifier: "MemberToRegister", sender: nil)
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //        performSegue(withIdentifier: "MemberToRegister", sender: nil)
+        //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let identifier = id[indexPath.row]
         let vc = storyboard!.instantiateViewController(withIdentifier: identifier) as UIViewController
         present(vc, animated: true, completion: nil)
     }
-
+    
 }
 extension MemberPageViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Member.count
+        if temp<=Member.count {
+            print(temp)
+        }
+        if temp>Member.count{
+            print(temp)
+            temp = Member.count
+        }
+        print(temp)
+        return temp
     }
+
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemberCollectionViewCell", for: indexPath) as! MemberCollectionViewCell
@@ -102,13 +113,13 @@ extension MemberPageViewController: UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
+        
         let noOfCellsInRow = 2   //number of column you want
         let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
         let totalSpace = flowLayout.sectionInset.left
             + flowLayout.sectionInset.right
             + (flowLayout.minimumInteritemSpacing * CGFloat(noOfCellsInRow - 1))
-
+        
         let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(noOfCellsInRow))
         return CGSize(width: size, height: size)
     }
