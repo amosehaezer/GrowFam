@@ -9,17 +9,26 @@
 import UIKit
 
 class PopUpViewController: UIViewController {
-
+    
+    @IBOutlet var helpPage: UIView!
+    var tapGesture = UITapGestureRecognizer()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       super.viewDidLoad()
+       // TAP Gesture
+       tapGesture = UITapGestureRecognizer(target: self, action: #selector(myviewTapped(_:)))
+       tapGesture.numberOfTapsRequired = 1
+       tapGesture.numberOfTouchesRequired = 1
+       helpPage.addGestureRecognizer(tapGesture)
+       helpPage.isUserInteractionEnabled = true
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func HidePopUp(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+   @objc func myviewTapped(_ sender: UITapGestureRecognizer) {
+    print("Hello")
+    dismiss(animated: true, completion: nil)
     }
-    
+   
     /*
     // MARK: - Navigation
 
