@@ -12,6 +12,23 @@ class AchievementVC: UIViewController {
     
     var collectionPlant: UICollectionView?
     var collectionAchievement: UICollectionView?
+    
+    var plantData: [UIImage?] = [
+        UIImage(named: "Plant 1 Shadow"),
+        UIImage(named: "Plant 2 Shadow"),
+        UIImage(named: "Plant 3 shadow"),
+        UIImage(named: "Plant 4 Shadow"),
+        UIImage(named: "Plant 5 Shadow")
+    ]
+    
+    var achievementData: [UIImage?] = [
+        UIImage(named: "Plant 1 Shadow"),
+        UIImage(named: "Plant 1 Shadow"),
+        UIImage(named: "Plant 1 Shadow"),
+        UIImage(named: "Plant 1 Shadow"),
+        UIImage(named: "Plant 1 Shadow"),
+        UIImage(named: "Plant 1 Shadow"),
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,20 +83,29 @@ class AchievementVC: UIViewController {
         collectionAchievement?.dataSource = self
         collectionAchievement?.delegate = self
         view.addSubview(collectionAchievement ?? UICollectionView())
+        
+        print(plantData)
     }
 
 }
 
 extension AchievementVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        if collectionView == collectionPlant {
+            return plantData.count
+        } else {
+            return achievementData.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == collectionAchievement {
             let achievementCell = collectionView.dequeueReusableCell(withReuseIdentifier: "AchievementCell", for: indexPath)
+            
             achievementCell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             achievementCell.layer.cornerRadius = 20
+
+            
             return achievementCell
         } else {
             let plantCell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlantCell", for: indexPath)
@@ -93,9 +119,9 @@ extension AchievementVC: UICollectionViewDataSource {
 extension AchievementVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == collectionPlant {
-            print("ini plant tau!")
+            print("Plant")
         } else {
-            print("ini achievement")
+            print("Achievement")
         }
     }
 }
