@@ -12,7 +12,9 @@ import AVFoundation
 class HomeViewController: UIViewController {
     
     var animatorProperty = UIViewPropertyAnimator()
-
+    
+    lazy var date = Date()
+    
     let coin = UIImageView()
     let coinFrames: [UIImage] = [
         UIImage(named: "Coin 1")!,
@@ -25,7 +27,6 @@ class HomeViewController: UIViewController {
         UIImage(named: "Coin 4 Copy")!,
         UIImage(named: "Coin 3 Copy 2")!,
         UIImage(named: "Coin 2 Copy")!,
-//        UIImage(named: "Coin 1")!
     ]
     
     @IBOutlet weak var rainView: UIView!
@@ -104,8 +105,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         overlayFrame.alpha = 0
-        
-        
 
         let tap = UITapGestureRecognizer(target: self, action: #selector(flowerDidTapped))
         rainView.addGestureRecognizer(tap)
@@ -113,7 +112,7 @@ class HomeViewController: UIViewController {
         makeCoinAppear =  UITapGestureRecognizer(target: self, action: #selector(setupCoin))
         frame.addGestureRecognizer(makeCoinAppear)
         
-//        playSound(file: "NC3")
+        playSound(file: "NC3")
         
         setupRain()
         view.addSubview(frame)
@@ -139,7 +138,7 @@ class HomeViewController: UIViewController {
 
         let tapCoin = UITapGestureRecognizer(target: self, action: #selector(animateCoin))
         overlayFrame.addGestureRecognizer(tapCoin)
-
+        
         view.addSubview(overlayFrame)
         view.addSubview(coin)
         }
@@ -150,6 +149,8 @@ class HomeViewController: UIViewController {
         let secondsToDelay = 10.0
         DispatchQueue.main.asyncAfter(deadline: .now() + secondsToDelay) {
             self.coinTap = true
+            
+            
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 15) {
             self.overlayFrame.layer.opacity = 0
