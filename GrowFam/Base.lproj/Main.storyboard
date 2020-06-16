@@ -380,7 +380,7 @@
                                     </preferredSymbolConfiguration>
                                 </state>
                                 <connections>
-                                    <action selector="SpeakerClicked:" destination="UMz-hY-gn1" eventType="touchUpInside" id="I7X-sQ-P2N"/>
+                                    <action selector="speakerClicked:" destination="UMz-hY-gn1" eventType="touchUpInside" id="PGw-lx-wp2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBL-Vk-Qm1">

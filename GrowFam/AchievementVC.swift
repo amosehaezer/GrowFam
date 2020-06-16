@@ -20,6 +20,15 @@ class AchievementVC: UIViewController {
         UIImage(named: "Plant 4 Shadow"),
         UIImage(named: "Plant 5 Shadow")
     ]
+    
+    var achievementData: [UIImage?] = [
+        UIImage(named: "Plant 1 Shadow"),
+        UIImage(named: "Plant 1 Shadow"),
+        UIImage(named: "Plant 1 Shadow"),
+        UIImage(named: "Plant 1 Shadow"),
+        UIImage(named: "Plant 1 Shadow"),
+        UIImage(named: "Plant 1 Shadow"),
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,7 +91,11 @@ class AchievementVC: UIViewController {
 
 extension AchievementVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return plantData.count
+        if collectionView == collectionPlant {
+            return plantData.count
+        } else {
+            return achievementData.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

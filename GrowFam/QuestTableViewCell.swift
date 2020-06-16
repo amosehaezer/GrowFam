@@ -64,20 +64,4 @@ class QuestTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        setup()
-//        // Initialization code
-//    }
-//
-//    func setup() {
-//
-//    }
-//
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
-    
 }
