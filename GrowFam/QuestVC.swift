@@ -7,21 +7,33 @@
 //
 
 import UIKit
+
 //struct untuk data dummy quest
 struct Quest{
-    let desc:String
+    var title: String
+    let desc: String
 }
 class QuestVC: UIViewController {
     
     let QuestTV = UITableView()
     var totalCount: Int = 0
     var currentCount: Int = 0
+    
     //dummy data quest
-    let contacts = [
-        Quest(desc: "Tolong jagain toko"),
-        Quest(desc: "Masak makanan bersama keluarga"),
-        Quest(desc: "Tidur bareng"),
+    
+    var familyQuest = [
+        Quest(title: "Family 1", desc: "Cook together"),
+        Quest(title: "Family 2", desc: "Watch some movies"),
+        Quest(title: "Family 3", desc: "Go for some shopping"),
     ]
+    var personalQuest = [
+        Quest(title: "Personal", desc: "Do your work"),
+        Quest(title: "Personal", desc: "Help someone with their work"),
+        Quest(title: "Personal", desc: "Clean out the dishes"),
+        Quest(title: "Personal", desc: "Clean out your own room"),
+        Quest(title: "Personal", desc: "Make drinks for the others")
+    ]
+    
     var control: UISegmentedControl!
     var familyData = [Quest]()
     var personalData = [Quest]()
@@ -42,6 +54,7 @@ class QuestVC: UIViewController {
         
         let titleLabel = UILabel()
         titleLabel.frame = CGRect(x: 30, y: 70, width: 400, height: 100)
+        
         let titleString = NSAttributedString(string: "Today's Mission:    \(currentCount) / \(totalCount)", attributes: titleAttribute)
         titleLabel.attributedText = titleString
         titleLabel.font = UIFont.boldSystemFont(ofSize: 30)
@@ -52,7 +65,8 @@ class QuestVC: UIViewController {
         control.addTarget(self, action: #selector(segmentedControl(_:)), for: .valueChanged)
         control.selectedSegmentIndex = 0
         
-        QuestTV.frame = CGRect(x: 30, y: 225, width: (self.view.frame.width - 60), height: 750)
+        QuestTV.frame = CGRect(x: 30, y: 225, width: (self.view.frame.width - 60), height: 600)
+        QuestTV.backgroundColor = .clear
         QuestTV.separatorStyle = .none
         QuestTV.dataSource = self
         QuestTV.delegate = self
@@ -65,15 +79,6 @@ class QuestVC: UIViewController {
     }
     
     @objc func segmentedControl(_ segmentedControl: UISegmentedControl) {
-//        switch segmentedControl.selectedSegmentIndex {
-//        case 0:
-//            QuestTV.reloadData()
-//
-//        case 1:
-//            print("Ini Personal")
-//        default:
-//            break
-//        }
         QuestTV.reloadData()
     }
     
@@ -88,11 +93,11 @@ extension QuestVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("DEBUG : \(control.selectedSegmentIndex)")
         if control.selectedSegmentIndex == 0 {
-//            return familyData.count
-            return 3
+            return familyQuest.count
+//            return 3
         }
-//        return personalData.count
-        return 5
+        return personalQuest.count
+//        return 5
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -101,24 +106,21 @@ extension QuestVC: UITableViewDataSource, UITableViewDelegate {
 
             switch control.selectedSegmentIndex {
                 case 0:
-                    cell.titleLabel.text = "Family"
-
+                    cell.titleLabel.text = familyQuest[indexPath.row].title
+                    cell.descLabel.text = familyQuest[indexPath.row].desc
                 case 1:
-                    cell.titleLabel.text = "Personal"
-
+                    cell.titleLabel.text = personalQuest[indexPath.row].title
+                    cell.descLabel.text = personalQuest[indexPath.row].desc
                 default:
                     print("DEFAULT")
             }
-
             return cell
         }
-    
-
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(75)
+        return CGFloat(150)
     }
 }
 

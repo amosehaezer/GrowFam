@@ -394,6 +394,11 @@
                                     <segue destination="2pC-i2-B1g" kind="presentation" id="q7G-J5-htL"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LCQ-9L-spf">
+                                <rect key="frame" x="20" y="131" width="374" height="547"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plant (0)" translatesAutoresizingMaskIntoConstraints="NO" id="PxD-8g-mib">
                                 <rect key="frame" x="87" y="558" width="240" height="120"/>
                                 <constraints>
@@ -417,11 +422,12 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="ShC-3H-Fru"/>
                     <connections>
                         <outlet property="audioButton" destination="dWX-th-lSO" id="ecV-vd-U8e"/>
+                        <outlet property="rainView" destination="LCQ-9L-spf" id="z8g-BR-hd9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eje-Uu-UF3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-348" y="885"/>
+            <point key="canvasLocation" x="-349.27536231884062" y="884.59821428571422"/>
         </scene>
         <!--Pop Up View Controller-->
         <scene sceneID="mou-vh-fjY">
