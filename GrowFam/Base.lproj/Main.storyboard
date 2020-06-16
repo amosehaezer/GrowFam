@@ -447,8 +447,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Complete Quest to grow your plant" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiO-FX-JNZ">
-                                <rect key="frame" x="96" y="327" width="223" height="124"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete Quest to grow your plant" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiO-FX-JNZ">
+                                <rect key="frame" x="106" y="355" width="203" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -468,7 +468,7 @@
                                     <constraint firstAttribute="width" constant="123" id="ept-ej-mgQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="See your achievement here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXg-1v-Ozh">
@@ -478,7 +478,7 @@
                                     <constraint firstAttribute="width" constant="152" id="Umg-a8-U1Y"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Wz4-L3-3to">
@@ -497,6 +497,12 @@
                                     <constraint firstAttribute="height" constant="54" id="fV0-3p-4LR"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap Anywhere to dismiss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOy-O9-Iw3">
+                                <rect key="frame" x="119" y="555" width="190" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.30223289695945948" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -507,9 +513,11 @@
                             <constraint firstItem="40h-xG-LfI" firstAttribute="bottom" secondItem="Wz4-L3-3to" secondAttribute="bottom" constant="80" id="DSi-Oh-EmA"/>
                             <constraint firstItem="Zcd-tf-leE" firstAttribute="leading" secondItem="40h-xG-LfI" secondAttribute="leading" constant="15" id="Gdh-79-Sba"/>
                             <constraint firstItem="TTq-cd-qMT" firstAttribute="top" secondItem="40h-xG-LfI" secondAttribute="top" constant="75" id="I6D-jH-vb7"/>
+                            <constraint firstItem="WOy-O9-Iw3" firstAttribute="top" secondItem="fiO-FX-JNZ" secondAttribute="bottom" constant="99" id="Jsz-3C-ukL"/>
                             <constraint firstItem="zib-zG-X1E" firstAttribute="top" secondItem="TTq-cd-qMT" secondAttribute="bottom" constant="8" id="MhA-c4-3ws"/>
                             <constraint firstItem="40h-xG-LfI" firstAttribute="trailing" secondItem="zib-zG-X1E" secondAttribute="trailing" constant="51" id="Qb0-U8-g9z"/>
                             <constraint firstItem="96H-cT-xVq" firstAttribute="top" secondItem="XXg-1v-Ozh" secondAttribute="bottom" constant="9" id="V02-Cp-3ip"/>
+                            <constraint firstItem="40h-xG-LfI" firstAttribute="trailing" secondItem="WOy-O9-Iw3" secondAttribute="trailing" constant="108" id="X41-RH-Baz"/>
                             <constraint firstItem="40h-xG-LfI" firstAttribute="bottom" secondItem="96H-cT-xVq" secondAttribute="bottom" constant="82" id="f0B-Zn-BiV"/>
                             <constraint firstItem="40h-xG-LfI" firstAttribute="trailing" secondItem="TTq-cd-qMT" secondAttribute="trailing" constant="117" id="fEn-Qg-JP6"/>
                             <constraint firstItem="40h-xG-LfI" firstAttribute="trailing" secondItem="96H-cT-xVq" secondAttribute="trailing" constant="51" id="hwc-Gw-CSA"/>
@@ -522,6 +530,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="40h-xG-LfI"/>
                     </view>
+                    <connections>
+                        <outlet property="helpPage" destination="OMM-Eo-ZhT" id="kuB-vZ-eel"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1o-UI-4Tt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
