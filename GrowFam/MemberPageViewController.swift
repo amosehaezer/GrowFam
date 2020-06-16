@@ -33,7 +33,7 @@ class MemberPageViewController: UIViewController{
     var taskTemp: String = ""
     override func viewDidLoad() {
         for member in 0..<Member.count-1 {
-            id.append("profileMember")
+            id.append("navigation")
         }
         id.append("addMember")
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)

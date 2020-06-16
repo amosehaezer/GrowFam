@@ -16,7 +16,7 @@ class FamilyRegisterViewController: UIViewController {
     @IBOutlet weak var FamilyNumberLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        FamilyNumberLabel.text = "\(temp)"
     }
     
     @IBAction func SubButton(_ sender: Any) {
